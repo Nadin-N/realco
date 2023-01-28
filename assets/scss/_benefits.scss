@@ -121,6 +121,7 @@
 }
 
 .reverse {
+	display: flex;
 	flex-direction: row-reverse;
 	display: inline-block;
 }
