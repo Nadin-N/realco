@@ -15,6 +15,9 @@
 			display: block;
 			text-align: center;
 		}
+		&.reverse {
+			flex-direction: row-reverse;
+		}
 	}
 
 	&__column {
@@ -120,7 +123,15 @@
 	}
 }
 
-.reverse {
-	display: flex;
-	flex-direction: row-reverse;
-}
+// .reverse {
+// 	display: flex;
+// 	flex-direction: row-reverse;
+// 	@media (max-width: 1280px) {
+// 		padding-bottom: 30px;
+// 		margin: 0 -15px;
+// 	}
+// 	@media (max-width: 900px) {
+// 		display: block;
+// 		text-align: center;
+// 	}
+// }
