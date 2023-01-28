@@ -1,0 +1,101 @@
+.locations {
+	background-color: $bc-1;
+	padding-bottom: 373px;
+	@media (max-width: 1280px) {
+		padding-bottom: 252px;
+		padding-top: 50px;
+	}
+	&__wrap {
+		@extend %tpl-container;
+	}
+
+	&__title {
+		@extend %tpl-h2;
+		text-align: center;
+		@media (max-width: 1280px) {
+			font-size: 32px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		max-width: 57%;
+		margin: 25px auto;
+		text-align: center;
+		@media (max-width: 1280px) {
+			margin: 10px auto;
+		}
+	}
+
+	&__box {
+		padding: 80px 0;
+		@media (max-width: 1280px) {
+			padding: 20px 0;
+		}
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 -8px;
+		@media (max-width: 1280px) {
+			margin: 0 -2px;
+		}
+		@media (max-width: 450px) {
+			display: block;
+		}
+	}
+
+	&__column {
+		flex: 0 1 31%;
+		@extend %tpl-btn;
+		border-radius: 16px;
+		background: $bc-main;
+		margin: 0 8px 16px;
+		padding: 33px;
+		@media (max-width: 1280px) {
+			padding: 10px;
+			margin: 0 2px 4px;
+		}
+		&:not(:last-child) {
+			@media (max-width: 680px) {
+				flex: 1 1 48%;
+				text-align: center;
+			}
+		}
+		&:last-child {
+			@media (max-width: 680px) {
+				flex: 1 1 100%;
+				text-align: center;
+			}
+		}
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 140%;
+		color: $c-2;
+		padding-bottom: 12px;
+	}
+
+	&__buttons {
+		text-align: center;
+		margin-bottom: 25px;
+		@media (max-width: 450px) {
+			padding: 0 40px;
+		}
+		a {
+			@extend %tpl-btn;
+			display: inline-block;
+			padding: 13px 25px;
+			background-color: $c-1;
+			margin-right: 24px;
+			@media (max-width: 450px) {
+				display: block;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.slogan {
+	background-color: $bc-2;
+	color: $c-1;
+	position: relative;
+	.slogan__text {
+		font-size: 14px;
+		text-align: center;
+		padding: 10px 10px;
+	}
+	.slogan__close {
+		position: absolute;
+		top: 4px;
+		right: 40px;
+		@media (max-width: 400px) {
+			right: 10px;
+		}
+	}
+}
+.header {
+	@extend %tpl-container;
+	&__box {
+		padding: 16px 0px;
+		display: flex;
+		@media (max-width: 991px) {
+			display: block;
+			width: 100%;
+		}
+	}
+	&__brand {
+		display: flex;
+		align-items: center;
+		width: 36.53%;
+		@media (max-width: 1405px) {
+			width: 25%;
+		}
+		@media (max-width: 1199px) {
+			width: 15%;
+		}
+		@media (max-width: 991px) {
+			display: inline-block;
+		}
+	}
+	&__menu {
+		width: 38.36%;
+		display: flex;
+		align-items: center;
+		a {
+			padding: 0 16px;
+			color: $c-3;
+		}
+		@media (max-width: 1405px) {
+			width: 50%;
+		}
+		@media (max-width: 1199px) {
+			width: 55%;
+		}
+		@media (max-width: 991px) {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+			padding: 25px 0;
+			line-height: 200%;
+		}
+	}
+	&__buttons {
+		width: 22.11%;
+		display: flex;
+		justify-content: space-between;
+		a {
+			@extend %tpl-btn;
+			&:last-child {
+				background-color: $bc-4;
+				color: $c-1;
+				@media (max-width: 991px) {
+					padding: 9px 12px;
+				}
+			}
+		}
+		@media (max-width: 1405px) {
+			width: 25%;
+		}
+		@media (max-width: 1199px) {
+			width: 30%;
+		}
+		@media (max-width: 991px) {
+			display: inline-block;
+			width: 100%;
+			text-align: center;
+		}
+	}
+}

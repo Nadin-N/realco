@@ -1,0 +1,78 @@
+.reviewers {
+	@extend %tpl-container;
+	padding: 160px 0;
+	text-align: center;
+	@media (max-width: 1280px) {
+		padding: 50px 0;
+	}
+	&__title {
+		@extend %tpl-h2;
+		@media (max-width: 1280px) {
+			font-size: 32px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		margin: 26px 0 80px;
+		@media (max-width: 1280px) {
+			font-size: 16px;
+			margin: 15px 0 20px;
+		}
+	}
+
+	&__box {
+		display: flex;
+		margin: 0 -16px;
+		@media (max-width: 1280px) {
+			margin: 0 -6px;
+		}
+		@media (max-width: 680px) {
+			display: block;
+		}
+	}
+
+	&__card {
+		flex: 0 1 33%;
+		@extend %tpl-btn;
+		border-radius: 16px;
+		margin: 0 16px;
+		padding: 33px 33px 60px 33px;
+		text-align: left;
+		@media (max-width: 1280px) {
+			padding: 25px 10px;
+			margin: 0 6px;
+		}
+		@media (max-width: 680px) {
+			padding: 15px 8px;
+		}
+	}
+	&__quote {
+		padding: 27px 0;
+		font-size: 18px;
+		color: $c-2;
+		@media (max-width: 1280px) {
+			padding: 15px 0;
+			font-size: 16px;
+			line-height: 120%;
+		}
+	}
+	&__img {
+		@media (max-width: 680px) {
+			text-align: center;
+		}
+	}
+
+	&__customer {
+		display: flex;
+	}
+
+	&__person {
+		padding-left: 16px;
+	}
+
+	&__name {
+		font-weight: 700;
+		color: $c-2;
+	}
+}

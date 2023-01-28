@@ -1,0 +1,108 @@
+.footer {
+	&__wrap {
+		@extend %tpl-container;
+		padding: 64px 0;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 960px) {
+			display: block;
+			padding: 20px 0;
+		}
+	}
+
+	&__row {
+		flex: 0 1 70%;
+		display: flex;
+		justify-content: space-between;
+		@media (max-width: 600px) {
+			display: block;
+			margin: 0 -16px;
+		}
+	}
+	&__brand {
+		display: flex;
+		flex: 0 1 25%;
+	}
+
+	&__list {
+		flex: 0 1 75%;
+		display: flex;
+		@media (max-width: 400px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__column {
+		width: 33%;
+		margin: 0 16px;
+		@media (max-width: 400px) {
+			width: 40%;
+			padding: 20px 0;
+			margin: 0 8px;
+			text-align: center;
+		}
+		&:last-child {
+			@media (max-width: 400px) {
+				width: 100%;
+			}
+		}
+	}
+
+	&__menu-name {
+		color: $c-2;
+		padding-bottom: 12px;
+	}
+
+	&__menu {
+		a {
+			display: block;
+			font-size: 14px;
+			line-height: 280%;
+			@media (max-width: 1280px) {
+				line-height: 180%;
+			}
+		}
+	}
+
+	&__newsletter {
+		flex: 0 1 30%;
+		@media (max-width: 600px) {
+			text-align: center;
+		}
+	}
+
+	&__block-name {
+		color: $c-2;
+	}
+
+	&__block-text {
+		padding: 12px 0;
+	}
+
+	&__block-buttons {
+		input {
+			@extend %tpl-btn;
+			padding: 12px 14px;
+			display: inline-block;
+			// @media (max-width: 720px) {
+			// 	display: block;
+			// 	width: 245px;
+			// }
+		}
+	}
+	button {
+		@extend %tpl-btn;
+		background-color: $bc-4;
+		color: $c-1;
+		padding: 13px 28px;
+		@media (max-width: 1280px) {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__block-note {
+		font-size: 12px;
+		padding-top: 16px;
+	}
+}

@@ -1,0 +1,135 @@
+.promo {
+	background-color: $bc-1;
+	&__box {
+		display: flex;
+		@media (max-width: 720px) {
+			display: block;
+			width: 100%;
+		}
+	}
+	&__info {
+		max-width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0px 137px 0px 80px;
+		position: relative;
+		@media (max-width: 1390px) {
+			padding: 0 30px;
+		}
+		@media (max-width: 720px) {
+			max-width: 100%;
+			text-align: center;
+		}
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 135px;
+			height: 146px;
+			background-image: url("../img/promo/frame.png");
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			@media (max-width: 1390px) {
+				width: 60px;
+				height: 65px;
+			}
+		}
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 135px;
+			height: 146px;
+			background-image: url("../img/promo/frame.png");
+			background-size: cover;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			transform: rotate(180deg);
+			@media (max-width: 1390px) {
+				width: 60px;
+				height: 65px;
+			}
+		}
+	}
+
+	&__slogan {
+		@extend %tpl-pref;
+		@media (max-width: 1190px) {
+			margin-top: 20px;
+			margin-left: 35px;
+		}
+		@media (max-width: 720px) {
+			margin: 0 auto;
+			margin-top: 18px;
+		}
+	}
+
+	&__title {
+		font-size: 56px;
+		line-height: 120%;
+		color: $c-2;
+		padding: 20px 0;
+		@media (max-width: 1190px) {
+			font-size: 38px;
+		}
+	}
+
+	&__text {
+		font-size: 20px;
+		padding-bottom: 21px;
+	}
+
+	&__buttons {
+		@media (max-width: 720px) {
+			max-width: 100%;
+			text-align: left;
+		}
+		position: relative;
+		.prepend {
+			position: absolute;
+			top: 12px;
+			left: 16px;
+			font-size: 24px;
+			@media (max-width: 1190px) {
+				top: 22px;
+			}
+			@media (max-width: 1072px) {
+				top: 12px;
+			}
+		}
+		input {
+			@extend %tpl-btn;
+			font-size: 20px;
+			padding: 9px 0px 9px 56px;
+			margin-right: 16px;
+			display: inline-block;
+			@media (max-width: 720px) {
+				display: block;
+				width: 245px;
+			}
+		}
+		button {
+			@extend %tpl-btn;
+			background-color: $bc-4;
+			color: $c-1;
+			font-size: 20px;
+			line-height: 135%;
+			@media (max-width: 1190px) {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__image {
+		max-width: 50%;
+		img {
+			width: 100%;
+		}
+		@media (max-width: 720px) {
+			max-width: 100%;
+		}
+	}
+}

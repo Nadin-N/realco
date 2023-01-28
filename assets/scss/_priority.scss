@@ -1,0 +1,47 @@
+.priority {
+	@extend %tpl-container;
+	background: $bc-3;
+	border-radius: 24px;
+	padding: 80px 0;
+	@media (max-width: 1280px) {
+		padding: 20px 0;
+	}
+	margin-top: -230px;
+	&__wrap {
+		max-width: 60%;
+		margin: 0 auto;
+		text-align: center;
+		@media (max-width: 1280px) {
+			max-width: 90%;
+		}
+	}
+
+	&__title {
+		@extend %tpl-h2;
+		color: $c-1;
+		padding: 13px 0 21px;
+		@media (max-width: 1280px) {
+			font-size: 32px;
+		}
+	}
+
+	&__text {
+		font-size: 18px;
+		color: $c-1;
+		@media (max-width: 540px) {
+			font-size: 16px;
+		}
+	}
+
+	&__buttons {
+		margin-top: 21px;
+		a {
+			display: inline-block;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+			border-radius: 6px;
+			padding: 13px 25px;
+			background-color: $bc-4;
+			color: $c-1;
+		}
+	}
+}
